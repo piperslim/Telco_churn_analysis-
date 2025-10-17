@@ -16,6 +16,10 @@
 The Telco Customer Churn Analysis project aims to understand the factors contributing to customer attrition (churn) within a telecommunications company. Using historical customer data, the project identifies key trends, behaviors, and patterns that influence whether a customer stays with or leaves the company.
 The dataset contains customer demographics, services subscribed to, and billing information. Through data analysis and visualization, the goal is to help the company reduce churn rates and improve customer retention strategies.
 
+[Dashboard](Telco_Customer_Churn.png)
+
+<img width="533" height="285" alt="Telco_Customer_Churn" src="https://github.com/user-attachments/assets/51913398-47ed-4607-aafc-8ece7d781918" />
+
 ### Data Sources
 
 Telco_customer_churn: The primary dataset used for this analysis is the "Telco_customer_churn.csv" file, containing detailed information about a telecommunications company’s customers, including:
