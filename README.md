@@ -12,6 +12,7 @@
 - [Limitations](#limitations)
 
 ### Project Overview
+---
 
 The Telco Customer Churn Analysis project aims to understand the factors contributing to customer attrition (churn) within a telecommunications company. Using historical customer data, the project identifies key trends, behaviors, and patterns that influence whether a customer stays with or leaves the company.
 The dataset contains customer demographics, services subscribed to, and billing information. Through data analysis and visualization, the goal is to help the company reduce churn rates and improve customer retention strategies.
@@ -21,6 +22,7 @@ The dataset contains customer demographics, services subscribed to, and billing 
 <img width="533" height="285" alt="Telco_Customer_Churn" src="https://github.com/user-attachments/assets/51913398-47ed-4607-aafc-8ece7d781918" />
 
 ### Data Sources
+---
 
 Telco_customer_churn: The primary dataset used for this analysis is the "Telco_customer_churn.csv" file, containing detailed information about a telecommunications company’s customers, including:
 - Customer demographics (gender, senior citizen, partner, dependents)
@@ -29,11 +31,12 @@ Telco_customer_churn: The primary dataset used for this analysis is the "Telco_c
 - Churn status (whether the customer left the company or stayed)
 
 ### Tools
-
+---
 - SQL: For data extraction, transformation, quering and key metric calculations.
 - Power BI: For interactive dashboard creation.
 
 ### Data Cleaning
+---
 
 Before performing analysis, the Telco Customer Churn dataset was carefully cleaned and prepared to ensure data accuracy and consistency. The following steps were carried out:
 1. Data loading and inspection.
@@ -41,6 +44,7 @@ Before performing analysis, the Telco Customer Churn dataset was carefully clean
 3. Data cleaning and formatting.
 
 ### Exploratory Data Analysis
+---
 
 EDA Involved exploring the Telco data to answer key questions, such as:
 - Total number of customers
@@ -55,7 +59,7 @@ EDA Involved exploring the Telco data to answer key questions, such as:
 - Whats the effect of paperless billing on churn.
 
 ### Data Analysis
-
+---
 Includes some interesting codes/features worked with
 
 ``` sql
@@ -157,6 +161,7 @@ select
 ```
 
 ### Findings and Recommendations
+---
 
 1. Customers with shorter tenure (new customers) are more likely to churn compared to long-term loyal customers.
 - Recommendation: Focus on early engagement, and welcome offers during the first 6 months.
@@ -176,9 +181,10 @@ select
 - Recommendation: Run price sensitivity analysis and introduce loyalty discounts for higher spenders.
 
 ### Limitations
+---
 
 Possible Data Entry or Recording Errors:
-- There were blank values in the TotalCharges column.
+- There were blank values in the `TotalCharges` column.
 
 
 
