@@ -63,6 +63,34 @@ EDA Involved exploring the Telco data to answer key questions, such as:
 Includes some interesting codes/features worked with
 
 ``` sql
+create table telco_customer_churn(customer_id varchar,
+								  gender varchar,
+								  senior_citizen int,
+								  partner varchar,
+								  dependents varchar,
+								  tenure int,
+								  phone_service varchar,
+								  multiple_lines varchar,
+								  internet_service varchar,
+								  online_security varchar,
+								  online_backup varchar,
+								  device_protection varchar,
+								  tech_support varchar,
+								  streaming_tv varchar,
+								  streaming_movies varchar,
+								  contract varchar,
+								  paperless_billing varchar,
+								  payment_method varchar,
+								  monthly_charges float,
+								  total_charges float,
+								  churn varchar);
+```
+
+``` sql
+select * from telco_customer_churn;
+```
+
+``` sql
 select 
        count(*) as "Total Customers" 
 	     from telco_customer_churn;
