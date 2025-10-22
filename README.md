@@ -62,6 +62,7 @@ EDA Involved exploring the Telco data to answer key questions, such as:
 ---
 Includes some interesting codes/features worked with
 
+#### To create a telco_churn_customer table
 ``` sql
 create table telco_customer_churn(customer_id varchar,
 								  gender varchar,
@@ -86,16 +87,19 @@ create table telco_customer_churn(customer_id varchar,
 								  churn varchar);
 ```
 
+#### To print a Telco_custommer_churn table
 ``` sql
 select * from telco_customer_churn;
 ```
 
+#### The total number of customers
 ``` sql
 select 
        count(*) as "Total Customers" 
 	     from telco_customer_churn;
 ```
 
+#### The total number of churned customer, non churned customer and % churned rate
 ``` sql
 select 
     count(*) as "Total Customers",
@@ -105,6 +109,7 @@ select
     from telco_customer_churn;
 ```
 
+#### The average tenure by churn status
 ``` sql
 select Churn,
        round (AVG(tenure),2) as"average tenure"
@@ -112,6 +117,7 @@ select Churn,
        group by Churn;
 ```
 
+####  The maximum and minimum tenure by churn status
 ``` sql
 select churn,
        min (tenure) as "minimum tenure",
@@ -120,6 +126,7 @@ select churn,
 	     group by churn;
 ```
 
+#### The churn by gender
 ``` sql
 select  gender,
         count(*) as TotalCustomers,
@@ -130,6 +137,7 @@ select  gender,
         order by ChurnRatePercent desc;
 ```
 
+#### The churn rate by contract type
 ``` sql
 select Contract,
        count(*)as TotalCustomers,
@@ -140,6 +148,7 @@ select Contract,
        order by ChurnRatePercent desc;
 ```
 
+#### The churn rate by payment method
 ``` sql
 select payment_method,
        count(*) as TotalCustomers,
@@ -150,6 +159,7 @@ select payment_method,
        order by ChurnRatePercent desc;
 ```
 
+#### The churn by senior citizen status
 ``` sql
 select case
        when senior_citizen = 1 then 'Senior Citizen'
@@ -167,6 +177,7 @@ select case
        order by ChurnRatePercent desc;
 ```
 
+#### The churn by internet service type
 ``` sql
 select internet_service,
        count(*) as TotalCustomers,
@@ -177,6 +188,7 @@ select internet_service,
        order by ChurnRatePercent desc;
 ```
 
+#### The effect of paperless billing on churn
 ``` sql
 select
 	    paperless_billing,
